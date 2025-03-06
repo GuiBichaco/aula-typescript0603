@@ -1,4 +1,12 @@
-//Exercicio 1
+// 1. Interfaces e Tipagem Avançada
+
+/*Exercício 1
+Crie uma interface chamada Carro, que contenha as seguintes propriedades:
+marca (string)
+modelo (string)
+ano (number)
+motor (opcional, string)
+Em seguida, crie um objeto chamado meuCarro que implemente essa interface e exiba os dados no console.*/
 
 interface Carro {
     marca: string;
@@ -13,3 +21,12 @@ const meuCarro: Carro = {
     ano: 2025,
 };  
 console.log(meuCarro)
+
+
+//Exercício 2
+
+interface Multiplicacao {
+    (a: number, b: number): number;
+}
+const multiplicacao: Multiplicacao = (x,y) => x * y;
+console.log(multiplicacao(5,2))

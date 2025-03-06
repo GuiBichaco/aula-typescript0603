@@ -52,4 +52,27 @@ console.log(multiplicacao(6,7))
  * @description Crie uma função genérica chamada inverterArray<T>, que recebe um array de qualquer tipo e retorna um novo array com os elementos invertidos.
  * @description Teste a função com um array de números e um array de strings
  * 
+ * @method slice() 
+ * @description Cria uma cópia superficial de uma parte de um array, retornando um novo array com os elementos selecionados. Não altera o array original.
+ * 
+ * @method reverse()
+ * @description Inverte os elementos de um array in place (ou seja, no próprio array), e retorna o array invertido. Altera o array original.
+ * 
+ */
+
+function inverterArray<T>(array: T[]): T[] {
+    return array.slice().reverse();
+}
+const numeros: number[] = [1,2,3,4,5];
+console.log(inverterArray(numeros)); //Resultado esperado [5,4,3,2,1]
+
+const palavras: string[] = ["Olá", "Mundo", "TypeScript"];
+console.log(inverterArray(palavras)); // Resultado esperado ["typescript", "mundo", "olá"]
+
+/**
+ * Exercício 4
+ * 
+ * 
+ * 
+ * 
  */
